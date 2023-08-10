@@ -1,0 +1,42 @@
+body {
+    padding: 2rem 10rem;
+    background-color: black;
+    color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none !important;
+
+    /* background image */
+    background-image: url("estrelas.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.button-1 {
+    color: black;
+    padding: 10px 5px;
+    background-color: gold;
+    border: 1px solid yellow;
+}
+
+.button-1:hover {
+    color: gold;
+    background-color: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.text-1{
+    color: white;
+    font-size: large;
+}
+
+.text-color-white {
+    color: white;
+}
