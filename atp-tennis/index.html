@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="text.css">
         <link rel="stylesheet" href="header.css">
+         
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
     <body >
         <header class="main-header">
@@ -37,7 +40,7 @@
         </a>
 
         <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <button class="button-1">
+            <button type="button" class="btn-primary">
                 Click here for free gift!
             </button>
         </a>
@@ -114,11 +117,35 @@
         </div>
 
         <div class="atp-ranking">
+            <h3 class="atp-ranking-title">Get results from any player!</h3>
+            <form onsubmit="submitForm()" class="mb-2">
+                <div class="form-group">
+                  <label for="player-name">Player Name</label>
+                  <input required type="text" class="form-control" id="text">
+                </div>
+                <div class="form-group">
+                  <label for="date">Get results from:</label>
+                  <input type="date" class="form-control" id="date">
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox">Include match stats</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+
+              <div class="alert alert-info alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Attention!</strong> The database has only data since 2020
+              </div>
+        </div>
+
+        <div class="atp-ranking">
             <h3 class="atp-ranking-title">Highlight of the week</h3>
-            <video width="320" height="240" controls>
+            <video width="580" height="420" controls>
                 <source src="highlight.mp4" type="video/mp4">
               Your browser does not support the video tag.
-            </video> 
+            </video>
+            <h2 class="atp-ranking-title">Adrian Mannarino <strong>US OPEN 2023</strong></h2>
         </div>
 
 
@@ -131,3 +158,9 @@
         </footer>
     </body>
 </html>
+
+<script>
+    function submitForm() {
+        alert("Could not found any data from this player!")
+    }
+</script>
