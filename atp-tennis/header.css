@@ -1,0 +1,31 @@
+.main-header {
+    width: 100vw;
+    background-color: brown;
+    color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-header{
+    text-decoration: none;
+}
+
+.main-footer {
+    width: 100vw;
+    background-color: brown;
+    color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-footer{
+    text-decoration: none;
+}
+
+.atp-ranking-section{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
